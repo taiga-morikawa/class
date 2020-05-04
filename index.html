@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>リストの練習</title>
+    <title>テーブルの練習</title>
 
     <link rel="stylesheet" type="text/css" href="css/common.css">
 
@@ -14,486 +14,210 @@
 
   <body>
 
-    <header>
-      <h1>
-        リストの練習
-      </h1>
-    </header>
+    <h1>
+        テーブルの練習
+    </h1>
 
-    <nav>
-      <ul>
-        <li><a href="#sec01">普通のリスト</a></li>
-        <li><a href="#sec02">数字のリスト</a></li>
-        <li><a href="#sec03">定義リスト</a></li>
-        <li><a href="#sec04">階層構造のリスト</a></li>
-        <li><a href="#sec05">マインドマップ</a></li>
-      </ul>
-    </nav>
+    <hr>
 
-    <article>
+    <h2>
+      普通のテーブル(好きな食べ物)
+    </h2>
 
-      <section id="sec01">
-        <h2>
-          普通のリスト(好きな科目)
-        </h2>
-        <ul>
-          <li>体育</li>
-          <li>数学</li>
-          <li>英語</li>
-          <li>国語</li>
-          <li>家庭科</li>
-        </ul>
-      </section>
+    <table>
+      <tr>
+        <td>餃子</td>
+        <td>牛ホルモン</td>
+        <td>火鍋</td>
+      </tr>
 
-      <section id="sec02">
-        <h2>
-          数字のリスト(カレーライスの作り方)
-        </h2>
-        <ol>
-          <li>手を洗う</li>
-          <li>鍋に湯を沸かす</li>
-          <li>野菜を切る</li>
-          <li>野菜を炒める</li>
-          <li>カレールーを鍋に入れる</li>
-        </ol>
+      <tr>
+        <td>味噌汁</td>
+        <td>ステーキ</td>
+        <td>イチゴ</td>
+      </tr>
+    </table>
 
-        <figure>
-          <img src="images/curry.jpg" alt="カレーライス">
-        </figure>
+    <hr>
 
-        <ol start="6">
-          <li>鍋をかき混ぜる</li>
-          <li>肉を冷凍庫から出す</li>
-          <li>肉を鍋に入れる</li>
-          <li>野菜を鍋に入れる</li>
-          <li>「おいしくな～れ&hearts;」のおまじない</li>
-        </ol>
-      </section>
+    <h2>
+      セルを結合したテーブル(好きなアニメ)
+    </h2>
 
-      <section id="sec03">
-        <h2>
-          定義リスト(みんなの授業)
-        </h2>
-        <dl>
-          <dt>WB15</dt>
-            <dd>webページ制作(山口先生)</dd>
-          <dt>JV15</dt>
-            <dd>Javaプログラミング(古田先生)</dd>
-          <dt>CS12</dt>
-            <dd>コンピュータサイエンス(中根先生)</dd>
-          <dt>DB15</dt>
-            <dd>データベース構築(中村先生)</dd>
-          <dt>SL12</dt>
-            <dd>アルゴリズムと表計算(中根先生)</dd>
-          <dt>MK11</dt>
-            <dd>コンセプトメイキング(青山先生)</dd>
-          <dt>SG11</dt>
-            <dd>就職ガイダンス(前田先生)</dd>
-          <dt>CT12</dt>
-            <dd>クリエイション(水貝先生)</dd>
-          <dt>SD15</dt>
-            <dd>システム開発(古田先生)</dd>
-          <dt>FX12</dt>
-            <dd>ホームルーム(中根先生)</dd>
-          <dt>OT1I</dt>
-            <dd>学外学習(中根先生)</dd>
-        </dl>
-      </section>
+    <table>
+      <tr>
+        <td rowspan="2">ONE PIECE</td>
+        <td>おじゃる丸</td>
+        <td>ギルティクラウン</td>
+      </tr>
 
-      <section id="sec04">
-        <h2>
-          階層構造のあるリスト(東海三県)
-        </h2>
-        <ul>
-          <li>岐阜県</li>
-          <li>
-            愛知県
-            <ul>
-              <li>蒲郡市</li>
-              <li>北名古屋市</li>
-              <li>
-                名古屋市
-                <ul>
-                  <li>中区</li>
-                  <li>東区</li>
-                  <li>西区</li>
-                  <li>中村区</li>
-                  <li>守山区</li>
-                  <li>天白区</li>
-                  <li>緑区</li>
-                  <li>瑞穂区</li>
-                  <li>昭和区</li>
-                  <li>名東区</li>
-                  <li>南区</li>
-                  <li>港区</li>
-                  <li>北区</li>
-                  <li>千種区</li>
-                  <li>熱田区</li>
-                  <li>中川区</li>
-                </ul>
-              </li>
-              <li>岡崎市</li>
-              <li>小牧市</li>
-            </ul>
-          </li>
-          <li>三重県</li>
-        </ul>
-      </section>
+      <tr>
+        <td colspan="2">ダンジョンに出会いを求めるのは間違っているだろうか</td>
+      </tr>
+    </table>
 
-      <section id="sec05">
-        <h2>
-        マインドマップ
+    <hr>
+
+    <h2>
+      見出しがあるテーブル／セル内の間隔をあける(好きな芸能人)
+    </h2>
+
+    <table id="nai">
+      <tr>
+        <th>名前</th>
+        <th>芸能人</th>
+      </tr>
+
+      <tr>
+        <td>山口</td>
+        <td>橋本環奈</td>
+      </tr>
+
+      <tr>
+        <td>長谷川</td>
+        <td>広瀬すず</td>
+      </tr>
+
+      <tr>
+        <td>ウー</td>
+        <td>本田翼</td>
+      </tr>
+
+      <tr>
+        <td>チョン</td>
+        <td>清水翔太</td>
+      </tr>
+
+      <tr>
+        <td>舟橋</td>
+        <td>遠藤正明</td>
+      </tr>
+
+    </table>
+
+      <hr>
+
+      <h2>
+        テーブルのサイズ指定/セル内の文字の位置
       </h2>
-      <ul>
-        <li>
-          洋服
-          <ul>
-            <li>
-              デニム
-              <ul>
-                <li>
-                  古着
-                  <ul>
-                    <li>
-                      安い
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              金かかる
-              <ul>
-                <li>
-                  趣味
-                </li>
-              </ul>
-            </li>
-            <li>
-              モード学園
-              <ul>
-                <li>
-                  個性
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          バイク
-          <ul>
-            <li>
-              暑い
-              <ul>
-                <li>
-                  夏
-                  <ul>
-                    <li>
-                      花火
-                      <ul>
-                        <li>
-                          火薬
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      祭り
-                      <ul>
-                        <li>
-                          浴衣
-                        </li>
-                        <li>
-                          屋台
-                          <ul>
-                            <li>
-                              たこ焼き
-                            </li>
-                          </ul>
-                          <ul>
-                            <li>
-                              フライドポテト
-                            </li>
-                          </ul>
-                          <ul>
-                            <li>
-                              からあげ
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              寒い
-                <ul>
-                  <li>
-                    冬
-                    <ul>
-                      <li>
-                        スタッドレスタイヤ
-                      </li>
-                      <li>
-                        雪
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-            </li>
-            <li>
-              持ってない
-              <ul>
-                <li>
-                  欲しい
-                  <ul>
-                    <li>
-                      スポーツ
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          安城
-          <ul>
-            <li>
-              デンパーク
-              <ul>
-                <li>
-                  ソーセージ
-                  <ul>
-                    <li>
-                      ドイツ
-                      <ul>
-                        <li>
-                          ヨーロッパ
-                          <ul>
-                            <li>
-                              HAL夏季ツアー
-                              <ul>
-                                <li>
-                                  イタリア
-                                  <ul>
-                                    <li>
-                                      ピザ
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  フランス
-                                  <ul>
-                                    <li>
-                                      エッフェル塔
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  イギリス
-                                  <ul>
-                                    <li>
-                                      ハリーポッター
-                                      <ul>
-                                        <li>
-                                          ホグワーツ
-                                          <ul>
-                                            <li>
-                                              グリフィンドール
-                                            </li>
-                                          </ul>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  ドイツ
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  ビール
-                  <ul>
-                    <li>
-                      アサヒ
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              新幹線
-              <ul>
-                <li>
-                  快適
-                  <ul>
-                    <li>
-                      車
-                      <ul>
-                        <li>
-                          jeep
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          テニス
-          <ul>
-            <li>
-              焼ける
-              <ul>
-                <li>
-                  痛い
-                  <ul>
-                    <li>
-                      注射
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          本
-          <ul>
-            <li>
-              村上春樹
-              <ul>
-                <li>
-                  ノルウェイの森
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          姉
-          <ul>
-            <li>
-              警察
-              <ul>
-                <li>
-                  白バイ
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          スノーボード
-          <ul>
-            <li>
-              寒い
-              <ul>
-                <li>
-                  コーヒー
-                  <ul>
-                    <li>
-                      スタバ
-                    </li>
-                    <li>
-                      コメダ
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          アウトドア
-          <ul>
-            <li>
-              キャンプ
-              <ul>
-                <li>
-                  長野　
-                </li>
-              </ul>
-            </li>
-            <li>
-              登山
-              <ul>
-                <li>
-                  富士山
-                </li>
-              </ul>
-            </li>
-            <li>
-              BBQ
-              <ul>
-                <li>
-                  肉
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          犬
-          <ul>
-            <li>
-              トイプードル
-              <ul>
-                <li>
-                  パーマ
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          旅行
-          <ul>
-            <li>
-              飛行機
-              <ul>
-                <li>
-                  セントレア
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          ジム
-          <ul>
-            <li>
-              ゴールドジム
-              <ul>
-                <li>
-                  ボディビル
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      </section>
 
-    </article>
+      <table id="yakisoba">
+        <tr>
+          <td class="td_left td_top">左上</td>
+          <td class="td_center td_top">中上</td>
+          <td class="td_right td_top">右上</td>
+        </tr>
+        <tr>
+          <td class="td_left td_middle">左中</td>
+          <td class="td_center td_middle">中中</td>
+          <td class="td_right td_middle">右中</td>
+        </tr>
 
-    <footer>
-      Copyright &copy; 2019 MorikawaTaiga. All rights reserved.
-    </footer>
+        <tr>
+          <td class="td_left td_bottom">左下</td>
+          <td class="td_center td_bottom">中下</td>
+          <td class="td_right td_bottom">右下</td>
+        </tr>
+      </table>
 
+      <hr>
+
+      <h2>
+        見栄えの良いテーブル&#9312;(現場猫)
+      </h2>
+
+      <table id="genbacat1">
+        <tr>
+          <td><img src="images/genbacat/001.png" alt="現場猫001"></td>
+          <td><img src="images/genbacat/002.png" alt="現場猫002"></td>
+          <td><img src="images/genbacat/003.png" alt="現場猫003"></td>
+          <td><img src="images/genbacat/004.png" alt="現場猫004"></td>
+        </tr>
+
+        <tr>
+          <td>&#9312;対象を見る。</td>
+          <td>&#9313;指をさす。対象をしっかりみる。</td>
+          <td>&#9314;指を耳元へ。本当にヨシか考える。</td>
+          <td>&#9315;ヨシ！</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h2>
+        見栄えの良いテーブル&#9313;(現場猫)
+      </h2>
+
+      <table id="genbacat2">
+        <tr>
+          <td><img src="images/genbacat/001.png" alt="現場猫001"></td>
+          <td><img src="images/genbacat/002.png" alt="現場猫002"></td>
+          <td><img src="images/genbacat/003.png" alt="現場猫003"></td>
+          <td><img src="images/genbacat/004.png" alt="現場猫004"></td>
+        </tr>
+
+        <tr>
+          <td>&#9312;対象を見る。</td>
+          <td>&#9313;指をさす。対象をしっかりみる。</td>
+          <td>&#9314;指を耳元へ。本当にヨシか考える。</td>
+          <td>&#9315;ヨシ！</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h2>
+        プロフィールテーブル
+      </h2>
+
+      <table id="prof">
+        <tr>
+          <td rowspan="4" class="td_img"><img src="images/myself.jpg" alt="森川大雅"></td>
+          <td>森川大雅</td>
+        </tr>
+
+        <tr>
+          <td>90416</td>
+        </tr>
+
+        <tr>
+          <td>PI-11A-172</td>
+        </tr>
+
+        <tr>
+          <td>38</td>
+        </tr>
+
+        <tr>
+          <th>年齢</th>
+          <td>23歳</td>
+        </tr>
+
+        <tr>
+          <th>趣味</th>
+          <td>旅行</td>
+        </tr>
+
+        <tr>
+          <th>好きな食べ物</th>
+          <td>ステーキ</td>
+        </tr>
+
+        <tr>
+         <th>好きなスポーツ</th>
+         <td>ジムに通ってます</td>
+        </tr>
+
+        <tr>
+          <th>最近はまってること</th>
+          <td>ロードバイク</td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="ikgm">不器用ですが頑張ります！</td>
+        </tr>
+
+      </table>
   </body>
 
 </html>
